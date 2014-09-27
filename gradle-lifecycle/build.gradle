@@ -1,0 +1,23 @@
+// Gradle has a simple lifecycle: initialization, configuration, execution
+
+// declare a task without any actions associated to it
+task lifecycle
+
+// add actions run during task execution
+lifecycle << {
+    println 'lifecycle task executing action 1 ...'
+}
+
+lifecycle << {
+    println 'lifecycle task executing action 2 ...'
+}
+
+// add actions run during task configuration
+lifecycle {
+    println 'lifecycle task configuration 1 ...'
+}
+
+lifecycle {
+    println 'lifecycle task configuration 2 ...'
+}
+
