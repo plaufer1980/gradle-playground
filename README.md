@@ -13,4 +13,5 @@ java-library
 
 An example of a simple Java library bootstrapped with `gradle init --type java-library`.
 
+Run `gradle build` (or `./gradlew build` if you want to use the wrapper) to build the project.
 
